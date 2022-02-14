@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>@keyframes animate {
+      0%,
+      10%,
+      100% {
+        width: 0;
+      }
+      70%,
+      90% {
+        width: 100%;
+      }
+    }
+    h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: rgb(132, 0, 255);
+  -webkit-text-stroke: 0.3vw rgb(255, 0, 0);
+  text-transform: uppercase;
+  overflow: hidden;
+  animation: animate 7s linear infinite;
+  border-right: 4px solid rgb(255, 0, 234);
+}
+
+    </style>
+    <meta charset="utf-8" />
+    <title>Accueil</title>
+    <link href="style/style.css" rel="stylesheet" />
+  </head>
+
+  <header>
+    <h1 class="logo">Mathys</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projet.html">Projet personel</a></li>
+        <li><a href="about.html">A propos de moi</a></li>
+        <li><a href="code_source.html">Langage utilisé </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <div>
+    <h2 data-text="BIENVENUE" class="bienvenue_titre">BIENVENUE</h2> 
+    </div>
+
+    <div>
+      <button class="creepy-button"><a href="index_creepy.html" class="creepy-button">IBIBIBIB</a></button>
+    </div>
+  </body>
+</html>

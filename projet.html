@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>@keyframes animate {
+        0%,
+        10%,
+        100% {
+          width: 0;
+        }
+        70%,
+        90% {
+          width: 100%;
+        }
+      }
+      h2::before {
+        margin-top: 50px;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgb(132, 0, 255);
+    -webkit-text-stroke: 0.3vw rgb(255, 0, 0);
+    text-transform: uppercase;
+    overflow: hidden;
+    animation: animate 10s linear in;
+    border-right: 4px solid rgb(255, 0, 234);
+  }
+#slider {
+overflow: hidden;
+width: 50%;
+display: block;
+margin-left: auto;
+margin-right:auto;
+margin-top: 50px;
+
+
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+#slider figure img {
+    width: 20%;
+    float: left;
+    border: solid 15px rgb(195, 0, 255); 
+    
+}
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+      </style>
+    <meta charset="utf-8" />
+    <title>Projet perso</title>
+    <link href="style/style.css" rel="stylesheet" />
+  </head>
+
+  <header>
+    <h1 class="logo">Mathys 🥸</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projet.html">Projet personel</a></li>
+        <li><a href="about.html">A propos de moi</a></li>
+        <li><a href="code_source.html">Langage utilisé </a></li>
+      </ul>
+    
+    </nav>
+  </header>
+  <body>
+ <div id="slider">
+         <figure>
+             <img src="image/2.png">
+            <img src="image/1.png">
+            <img src="image/3.png">
+        </figure>
+
+    </div>
+
+    <h1 class="titre_projet_perso">Voici des captures d'écran de certaine de mes oeuvres d'art ! 😂</h1>
+  </body>
+</html>
